@@ -72,7 +72,6 @@ h2 {
         max-height: 10rem;
         border: 0.5rem solid rgba(255, 255, 255, 0.2); }
     #sideNav .navbar-collapse {
-      background-color: #0e203c;
       display: flex;
       align-items: flex-start;
       flex-grow: 0;
