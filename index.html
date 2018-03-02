@@ -224,21 +224,24 @@ as this will be implied by the places you apply to! -->
                 </a>
               </h3>
               <div class="subheading mb-3">
-                An exercise to use the YouTube developer API to create a SPA
-                using ReactJS to <b>1.</b>
+                Exercise to use ReactJS to build a YouTube video viewer by using the
+                YouTube API to fetch video based on search queries, display the video
+                information under the main video player, and list the top 6 searches
+                under in a video feed bar on the side of the main player.
               </div>
               <p>
-                As the JSON data needed to construct the dashboard is found at
-                various URL end-points, the <b>Request</b> <b>NPM</b> module
-                was used to tap into the API to pull the JSON data.
-                The JSON body was parsed and variables were created based on the
-                data retreived at the specified end-point.
-                Only
-                <b><a href="https://gist.github.com/jbueza/490d3aa4a096498d4642a0f602ce6968">
-                  priority data</a></b> was pulled form the API and rendered onto
-                the <b>EJS</b> templating engine.  The final dashboard was
-                styled using <b>CSS3</b> according to the template found
-                <a href="https://gist.github.com/jbueza/490d3aa4a096498d4642a0f602ce6968">here</a>.
+                This SPA is composed of 4 components; SearchBar, VideoDetial,
+                VideoList, and a VideoListItem, which together forms a
+                <a href="https://github.com/kdubss/ReduxSimpleStarter/blob/master/imgs/youtube-video-player-alpha.png">
+                  YouTube video player</a>.
+                The SearchBar component handles requests via. the YouTube API, which
+                can be attained <a href="https://developers.google.com/youtube/v3/getting-started">here</a>,
+                for YouTube.  When a new query is searched, a request is made to the API
+                with the API-Key and an array of videos is returned, which gets passed as a props
+                to the VideoList Component, which can be thought of as an array of
+                VideoListItem components, one for each of the videos returned from the query
+                to the YouTube API.  The first video of that array is displayed in the main iframe
+                by the VideoDetail Component.
               </p>
             </div>
             <div class="resume-date text-md-right">
