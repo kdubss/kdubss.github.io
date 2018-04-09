@@ -40,6 +40,7 @@ as this will be implied by the places you apply to! -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -191,22 +192,38 @@ as this will be implied by the places you apply to! -->
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <a href="https://github.com/kdubss/NodeJS-Weather-App">
-                  NodeJS/Python Weather-CLI-Tool & ReactJS Weather-App <small>(March 27; work-in-progress)</small>
+                  JavaScript Weather-CLI-Tool & Python/Flask/(React) Weather-App <small>(March 27; work-in-progress)</small>
                 </a>
               </h3>
               <div class="subheading mb-3">
-                A NodeJS CLI tool to access weather data for a user-input address
-                (or postal/zip code - i.e. "Montreal").
-                The CLI tool access weather data through the forecast.io API by
-                first, using the Google Maps API to attain the GPS Lat/Lon coordinates
-                of the input address, which is then fed to the API request to
-                forecast.io.  Once received, the returned JSON data object is used
-                to print out the current weather parameters for the address input.
-                Python/Pandas is used to parse and manipulate the data, which, in the
-                future, will be visulized with D3JS and passed to a ReactJS front-end.
-                Stay tuned for progress!
+                A JavaScript <u>CLI tool</u> to access weather data for a user-input address
+                (or postal/zip code - e.g. "Montreal", "54789"), from the Darky Sky API,
+                and a <u>web-app</u> (Python/Flask, D3.js) that renders fetched weather data
+                onto a data dashboard for analytical purposes.
               </div>
               <p>
+                This app is comprised of two components.  The first component
+                is a CLI tool, which currently fetches the current weather conditions
+                for an input address (e.g. city name, zip/postal code, or countries name).
+                Based on the input address, the <code>geocode.js</code> script
+                calls on the Google Maps API to fetch the lat/lon coordinates of the
+                encodeded input address. Once returned, <code>weather.js</code> uses those
+                coordinates to make a request to the Dark Sky API to fetch either
+                <i>forecast</i> weather data or <i>time-machine</i> historical
+                weather data, and returns the JSON data object.
+                <br><br>
+                The second component is a web-app built using Python/Flask.
+                Using the <code>requests</code>module, <code>api_requests.py</code>
+                uses the lat/lon coordinates returned from <code>geocode.py</code>
+                to fetch the weather data from the Dark Sky API.  With functionality
+                from <code>weather.py</code>, The Flask server is able to fetch
+                and pass weather data to static HTML templates where the data is
+                rendered by D3.js.  Although currently 'static', the <i>forecast</i>
+                and <i>time-machine</i> requests to the Dark Sky API are made
+                for the current datetime, so the rendered data stays current.
+                <br><br>
+                The goal, now, is to build the data dashboard
+                front-end using Python/Flask and React.js.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -646,7 +663,9 @@ as this will be implied by the places you apply to! -->
             </li>
             <li class="list-inline-item">
               <i class="devicon-rails-plain-wordmark colored"></i>
-
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-d3js-plain colored"></i>
             </li>
           </ul>
 
