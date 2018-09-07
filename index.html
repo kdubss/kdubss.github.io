@@ -105,7 +105,6 @@ as this will be implied by the places you apply to! -->
     </nav>
 
     <div class="container-fluid p-0">
-
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Kang
@@ -195,27 +194,18 @@ as this will be implied by the places you apply to! -->
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
                 <a href="https://github.com/kdubss/Portfolio">
-                  Personal Blogger / Portfolio Web-App <small>(work-in-progress)</small>
+                  Personal Blogger / Portfolio Web-App <small>(Jul. 2018 - work-in-progress)</small>
                 </a>
               </h3>
               <div class="subheading mb-3">
-                Creating a blog-app using
-                <b>1.</b> Ruby on Rails in order to
-                <b>2.</b> strengthen my understanding of object-oriented principles, and
-                <b>3.</b> to document my journey transitioning from a life in
-                academia (at UBC) to breaking into the tech-industry in Vancouver, BC.
+                Ruby-On-Rails, 
+                JavaScript,
+                PostgreSQL,
+                Bootstrap 4
               </div>
-              <p>
-                The purpose of this web-app is to chronicle my experiences as I move from a
-                life working in academia to the world of web/software-development.
-                <br>
-                Utilizing <i>RoR</i> for a backend, <i>JavaScript</i>/<i>Bootstrap</i> for the frontend, and <i>PostgreSQL</i> as a database, working on this project should give me a full breadth of know-how and an idea of what it's like as a full-stack developer.
+              <p style="width: 86%; text-align: 'justify';">
+                A personal web-app for me to blog about my career change from the world of academia and to show off my tech projects via. a portfolio space.
               </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
             </div>
           </div>
 
@@ -223,22 +213,20 @@ as this will be implied by the places you apply to! -->
           <div class="resume-index d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">
-                <a href="https://github.com/kdubss/NodeJS-Weather-App">
-                  JavaScript Weather-CLI-Tool & Python/Flask/(React) Weather-App <small>(March 2018; work-in-progress)</small>
+                <a href="https://github.com/kdubss/Dark-Sky-Weather">
+                  Dark Sky Weather App Web-App <small>(Aug. 2018 - work-in-progress)</small>
                 </a>
               </h3>
               <div class="subheading mb-3">
-                A tool to fetch weather data from the <a href="https://darksky.net/forecast/49.2497,-123.1193/us12/en">Dark Sky</a> API based on user-input addresses.
+                Flask/Python,
+                D3,
+                JavaScript,
+                Bootstrap 4
               </div>
-              <p>
-                This app is comprised of two components.  The first component is a Command-Line-Interface tool, which currently fetches the weather conditions for an input address (e.g. city name, zip/postal code, or countries name).  Based on the input address, the <code>geocode.js</code> script calls on the Google Maps API to fetch the lat/lon coordinates of the encodeded input address. Once returned, <code>weather.js</code> uses those coordinates to make a request to the Dark Sky API to fetch either <i>forecast</i> weather data or <i>time-machine</i> historical weather data, and returns the JSON data object.
-                <br><br>
-                The second component is a web-app built using Python/Flask.  Using the <code>requests</code>module, <code>api_requests.py</code> uses the lat/lon coordinates returned from <code>geocode.py</code> to fetch the weather data from the Dark Sky API.  With functionality from <code>weather.py</code>, The Flask server is able to fetch and pass weather data to static HTML templates where the data is rendered by <code>D3.js</code>.  Although currently 'static', the <i>forecast</i>
-                and <i>time-machine</i> requests to the Dark Sky API are made
-                for the current datetime, so the rendered data stays current.
-                <br><br>
-                The goal, now, is to build the data dashboard
-                front-end using <code>Python/Flask</code> and <code>React.js</code>.
+              <p style="width: 86%; text-align: 'justify';">
+                Currently, this app exists as a Python Flask server that fetches forecast and hindcast (i.e. Time Machine) weather data from the <a href='forecast.io'>Dark Sky</a> API, for a user-specified location.  Data (JSON) is returned as a <code>request</code> object which can then be parsed as a Python <code>dictionary</code> object.
+                <br>
+                Latitude/Longitude coordinates for a user-specified location is fetched from the Google Maps API and input into the URL request to Dark Sky.
               </p>
             </div>
             <div class="resume-date text-md-right">
@@ -247,220 +235,6 @@ as this will be implied by the places you apply to! -->
               </span>
             </div>
           </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/ReduxSimpleStarter">
-                  Youtube Video Browser <small>(February 27, 2018)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                Exercise to use ReactJS to build a YouTube video viewer by using the
-                YouTube API to fetch video based on search queries, display the video
-                information under the main video player, and list the top 6 searches
-                under in a video feed bar on the side of the main player.
-              </div>
-              <p>
-                This SPA is composed of 4 components; SearchBar, VideoDetial,
-                VideoList, and a VideoListItem, which together forms a
-                <a href="https://github.com/kdubss/ReduxSimpleStarter/blob/master/imgs/youtube-video-player-alpha.png">
-                  YouTube video player</a>.
-                The SearchBar component handles requests via. the YouTube API, which
-                can be attained <a href="https://developers.google.com/youtube/v3/getting-started">here</a>,
-                for YouTube.  When a new query is searched, a request is made to the API
-                with the API-Key and an array of videos is returned, which gets passed as a props
-                to the VideoList Component, which can be thought of as an array of
-                VideoListItem components, one for each of the videos returned from the query
-                to the YouTube API.  The first video of that array is displayed in the main iframe
-                by the VideoDetail Component.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/league-of-legends">
-                  League-of-Legends Match History Dashboard &nbsp;&nbsp;<small>(February 5, 2018)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                An exercise to pull JSON data using the
-                <b><a href="https://developer.riotgames.com/api-methods/">Riot API</a></b>
-                for the game <b>League Of Legends</b> and construct an <b>MVP</b>
-                match history dashboard.
-              </div>
-              <p>
-                As the JSON data needed to construct the dashboard is found at
-                various URL end-points, the <b>Request</b> <b>NPM</b> module
-                was used to tap into the API to pull the JSON data.
-                The JSON body was parsed and variables were created based on the
-                data retreived at the specified end-point.
-                Only
-                <b><a href="https://gist.github.com/jbueza/490d3aa4a096498d4642a0f602ce6968">
-                  priority data</a></b> was pulled form the API and rendered onto
-                the <b>EJS</b> templating engine.  The final dashboard was
-                styled using <b>CSS3</b> according to the template found
-                <a href="https://gist.github.com/jbueza/490d3aa4a096498d4642a0f602ce6968">here</a>.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/Geek-Bazaar">
-                  Geek Bazaar &nbsp;&nbsp;<small>(December 22, 2017 - January 11, 2018)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                A simple web interface for sellers and buyers of board games to
-                connect, communicate, and buy/sell/exchange board games!
-                Built using <b>VueJS</b> for the client font-end and
-                <b>Express</b> / <b>NodeJS</b> for the RESTful API server.
-                <b>Vuex</b> was used for centralized state-management with
-                <b>Vue-router</b> for end-point routing.
-                <b>PostgreSQL</b> database with <b>KnexJS</b> as the
-                SQL query builder.  Data on board games is pulled from the
-                <a href="https://www.npmjs.com/package/bgg">boardgamegeek API</a>.
-              </div>
-              <p>
-                Users are able to <b>a.</b>register/login/logout with authenticated
-                credentials, <b>b.</b> explore the current inventory of games
-                posted for sale on the Geek Bazaar inventory,
-                <b>c.</b> select multiple games, adding them to the purchase cart,
-                <b>d.</b> review the final order before checking out, and
-                <b>d.</b> connect with the buyer/seller, to finalize the
-                transaction and settle any disputes.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/chatty-app">
-                  Chatty &nbsp;&nbsp;<small>(November 27, 2017 - December 01, 2017)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                A real time chat application (<em>e.g.</em> Slack, Twitter,
-                Facebook) built using <b>ReactJS</b>, <b>WebSockets</b>,
-                <b>Webpack</b>, <b>JSX</b>, <b>Babel</b>.
-              </div>
-              <p>
-                The focus of <em>Chatty</em> is on client-side experience.
-                This app is primarily a client-side single page application,
-                containing a chat log displaying messages and notifications.
-                Multi-user real-time updates are implemented using <b>WebSockets</b>
-                for client-side communication with the server.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/LHL-midterm">
-                  Lighthouse Pub &nbsp;&nbsp;<small>(November 20, 2017 - November 24, 2017)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                Full stack team project
-                (built using <b>Express</b>, <b>Bootstrap 3</b>, <b>jQuery</b>,
-                <b>Sass</b>, <b>PostgreSQL</b>, <b>Knex</b>, <b>git</b>,
-                <b>ES5</b> & <b>ES6</b> code conventions)
-              </div>
-              <p>
-                <b>Lighthouse Pub</b> is a replica of the <em>foodora</em>,
-                <em>skip the dishes</em>, <em>just-eat</em>, etc. food ordering
-                services.  The client is able to browse through the menu,
-                make various selections from different categories, and checkout with
-                their selection(s).  Upon checkout, an SMS will be sent to the
-                client with a URL of their order details.
-                Upon payment and confirmation, another SMS will be
-                sent with a notification of approximate time for order pickup.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/tweeter">
-                  Tweeter &nbsp;&nbsp;<small>(November 13 - November 17, 2017)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                A single page Twitter clone app built with <b>HTML</b>,
-                <b>CSS</b>, <b>JS</b>, <b>jQuery</b>, and <b>AJAX</b> on the
-                front-end, and <b>Node</b>, <b>Express</b>, and
-                <b>MongoDB</b> on the back-end.
-              </div>
-              <p>
-                App built with focus on 1. <b>CSS</b>;
-                2. manipulation of the DOM using <b>jQuery</b>;
-                3. creating and reading data in/from a database (<b>MongoDB</b>).
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
-          <div class="resume-index d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">
-                <a href="https://github.com/kdubss/w2d2/tree/master/templateEngineWithEJS">
-                  TinyApp &nbsp;&nbsp;<small>(November 07, 2017 - November 13, 2017)</small>
-                </a>
-              </h3>
-              <div class="subheading mb-3">
-                A full-stack web app built with <b>Node</b> and <b>Express</b>
-              </div>
-              <p>
-                Web app that allows users to shorten long URLs (à la bit.ly).
-                <br>
-                An HTTP server handles requests from the client, and in doing so,
-                implements security features by using <b>bcrypt</b> and the
-                <b>cookie-session</b> middleware.
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">
-                <!-- December 22, 2017 - January 11, 2018 -->
-              </span>
-            </div>
-          </div>
-
         </div>
 
       </section>
@@ -515,116 +289,108 @@ as this will be implied by the places you apply to! -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="employment">
         <div class="my-auto">
           <h2 class="mb-5">Employment</h2>
+          
+          <!-- TMP: Jr. Web Developer -->
+          <div class='resume-item d-flex flex-column flex-md-row'>
+            <div class='resume-content mr-auto'>
+              <h3 class='mb-0'>Junior Web Developer</h3>
+              <div class='subheading mb-3'>
+                <a href='https://www.talentmarketplace.ca/'>TMP - TalentMarketplace</a>
+              </div>
+              <span>
+                <ul>
+                  <li>Currently in charge of handling various development ticket backlogs for TMP.</li>
+                  <li>Tasks range from,
+                    <ul>
+                      <li>Backend logic</li>
+                      <li>Frontend implementation</li>
+                      <li>CSS styling</li>
+                    </ul>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div class='resume-date text-md-right'>
+              <span class='text-primary'>
+                <p>August, 2018 - Current</p>
+              </span>
+            </div>
+          </div>
 
+          <!-- WalletCard - Full-Stack Software Developer -->
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Full Stack Software Developer</h3>
               <div class="subheading mb-3">
                 <a href="https://mywalletcard.com/">WalletCard</a>
               </div>
-              <ul>
-                <li>Junior Developer working on the SaaS WalletCard platform.</li>
-                <li>Daily work was centered around the Ruby-On-Rails platform.</li>
-                <li>Tasks also involved front-end features involving <code>JavaScript</code> and <code>Vue.js</code>, with <code>PostgreSQL</code> database tasks/queries as well.</li>
-                <li>Gained experience with,
-                  <ul>
-                    <li><code>MVC</code> workflow & <code>OOP</code>.</li>
-                    <li><code>Slim</code> view-template.</li>
-                    <li>Writing effective and efficient code (i.e. Rails' DRY principle).</li>
-                    <li>Rails <code>concerns</code>, <code>helpers</code>, <code>policies</code>.</li>
-                    <li>Git - collaborating with other team members using <code>git</code> as a tool for reviewing/refactoring code in pull requests, and to resolve merge conflicts when merging from a multitude of separate feature branches.</li>
-                  </ul>
-                </li>
-              </ul>
+              <span>
+                <ul>
+                  <li>Junior Developer working on the SaaS WalletCard platform.</li>
+                  <li>Gained experience with,
+                    <ul>
+                      <li><code>MVC</code> workflow & <code>OOP</code>.</li>
+                      <li><code>Slim</code> view-template.</li>
+                      <li>Writing effective and efficient code (DRY principle).</li>
+                      <li>Rails <code>concerns</code>, <code>helpers</code>, <code>policies</code>.</li>
+                      <li>Git - collaborating with other team members using <code>git</code> as a tool for reviewing/refactoring code in pull requests, and to resolve merge conflicts when merging from a multitude of separate feature branches.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </span>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">May - August, 2018</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">May - August, 2018</span>
-          </div>
-        </div>
-
+          
+          <!-- TSO Logic: Consultant/Jr. Web Developer -->
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Consultant</h3>
+              <h3 class="mb-0">Consultant/Jr. Web Developer</h3>
               <div class="subheading mb-3">
                 <a href="http://tsologic.com/">TSO Logic</a>
               </div>
-              <ul>
-                <li>Consultant for a short-term data visualization project</li>
-                <li>Utilized <code>JavaScript</code> and <code>D3.js</code> to produce a dynamic time-series visualization of <a href="https://bl.ocks.org/mbostock/4062045">force-directed graph</a> for TSO's cloud-based data-management, in similar fashion to an <a href="https://www.youtube.com/watch?v=mkJ-Uy5dt5g">Org-Org-Chart.</li>
-              </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">April - May, 2018</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Part-Time Retailer</h3>
-            <div class="subheading mb-3">
-              <a href="https://www.runningroom.com/ca/inside.php?id=4675">Cambie St. Runining Room</a>
+              <span>
+                <ul>
+                  <li>Consultant for a short-term data visualization project</li>
+                  <li>Utilized <code>JavaScript</code> and <code>D3.js</code> to produce a dynamic time-series visualization of <a href="https://bl.ocks.org/mbostock/4062045">force-directed graph</a> for TSO's cloud-based data-management, in similar fashion to an <a href="https://www.youtube.com/watch?v=mkJ-Uy5dt5g">Org-Org-Chart.</li>
+                </ul>
+              </span>
             </div>
-            <ul>
-              <li>Customer relations & services</li>
-              <li>If you need new gym, running, hiking shoes, I'm the one to see!</li>
-            </ul>
-        </div>
-        <div class="resume-date text-md-right">
-          <span class="text-primary">April - Current</span>
-        </div>
-      </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">April - May, 2018</span>
+            </div>
+          </div>
 
+          <!-- Data QC Specialist & Staff IT -->
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Scientific Staff - IT</h3>
+              <h3 class="mb-0">Data QC Specialist & Staff IT</h3>
               <div class="subheading mb-3">
                 <a href="https://hakai.org/">Hakai Institute</a>
               </div>
-              <ul>
-                <li>Worked with Hakai IT to design effective strategies for data
-                management within the
-                <a href="https://hecate.hakai.org/">Hakai Data Portal</a>,
-                from data collection, initial quality checks, to fully QC'd
-                data visualization</li>
-                <li>Designed and implemented automated routines for data QC and
-                time-series visualizations for the
-                <a href="https://www.hakai.org/research/oceanographic-monitoring">
-                  Hakai Oceanography
-                </a> program</li>
-                <li>Exposure to PostgreSQL</li>
-              </ul>
+              <span>
+                <ul>
+                  <li>Worked with Hakai IT and sea-going technicians to design effective strategies for data
+                  management within the
+                  <a href="https://hecate.hakai.org/">Hakai Data Portal</a>, ranging from,
+                    <ul>
+                      <li>Data collection</li>
+                      <li>Initial data-quality checks</li>
+                      <li>Designing and implementing effective data visualizations</li>
+                    </ul>
+                  </li>
+                  <li>Wrote semi-automated CLI scripts with Python to fetch, parse, and visualize oceanographic data for effective and efficient data QC for the <a href="https://www.hakai.org/research/oceanographic-monitoring">Hakai Oceanography</a> program</li>
+                  <li>Gained Exposure to PostgreSQL database</li>
+                  <li>Conducted data-analysis and produced posters for conferences and/or meetings</li>
+                </ul>
+              </span>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September, 2014 - November, 2017</span>
+            </div>
           </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 01 - October 29, 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row">
-          <div class="resume-content mr-auto">
-            <h3 class="mb-0">Data QC Specialist</h3>
-            <div class="subheading mb-3">Hakai Institute & UBC</div>
-            <ul>
-              <li>
-                Wrote semi-automated CLI scripts with Python to fetch, parse,
-                and visualize oceanographic data for effective and efficient data QC.
-              </li>
-              <li>
-                I worked collaboratively with Hakai IT and sea-going technicians to
-                develop effective and efficient data workflow, from the field-collection
-                of data to database storage and automated flagging, to accessing, parsing,
-                and visualization of time-series data through a dedicated Python API.
-              </li>
-              <li>
-                Conducted data-analysis and produced posters or conferences
-                and/or meetings.
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2014 - August 2017</span>
-          </div>
-        </div>
-
         </div>
       </section>
 
@@ -634,91 +400,79 @@ as this will be implied by the places you apply to! -->
         <div class="my-auto">
           <h2 class="mb-5"><a id="skills">Skills</a></h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicon-html5-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-css3-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-javascript-plain colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-jquery-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-react-original-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-python-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-sass-original colored"></i>
-            </li>
-            <!-- <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li> -->
-            <!-- <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li> -->
-            <li class="list-inline-item">
-              <i class="devicon-nodejs-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-mongodb-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-postgresql-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-git-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-github-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-vuejs-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-ruby-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-rails-plain-wordmark colored"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-d3js-plain colored"></i>
-            </li>
+          <!-- Libraries -->
+          <div>
+            <span class="subheading mb-3">Libraries</span>
+              <ul class="list-inline list-icons">
+                <li class="list-inline-item"><i class="devicon-react-original-wordmark colored"></i></li>
+                <li class="list-inline-item"><i class="devicon-jquery-plain-wordmark colored"></i></li>
+                <li class="list-inline-item"><i class="devicon-d3js-plain colored"></i></li>
+              </ul>
+          </div>
+          
+          <!-- Frameworks -->
+          <div>
+            <span class='subheading mb-3'>Frameworks</span>
+              <ul class="list-inline list-icons">
+                <li class="list-inline-item"><i class="devicon-rails-plain-wordmark colored"></i></li>
+                <li class="list-inline-item"><i class="devicon-django-plain colored"></i></li>
+                <li class="list-inline-item"><i class="devicon-nodejs-plain colored"></i></li>
+                <li class="list-inline-item"><i class="devicon-vuejs-plain-wordmark colored"></i></li>
+                <li class='list-inline-item colored'><small>Flask</small></li>
+              </ul>
+          </div>
+          
+          <!-- Languages -->
+          <div>
+            <span class="subheading mb-3">Languages</span>
+            <ul class="list-inline list-icons">
+              <li class="list-inline-item"><i class="devicon-python-plain-wordmark"></i></li>
+              <li class="list-inline-item"><i class="devicon-ruby-plain-wordmark colored"></i></li>
+              <li class="list-inline-item"><i class="devicon-javascript-plain colored"></i></li>
+              <li class="list-inline-item"><small>R</small></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Markup -->
+        <div>
+          <span class='subheading mb-3'>Markup</span>
+          <ul class='list-inline list-icons'>
+            <li class="list-inline-item"><i class="devicon-html5-plain-wordmark colored"></i></li>
+            <li class='list-inline-item'><small>Markdown</small></li>
           </ul>
-
-          <!-- <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+        </div>
+        
+        <!-- Stylesheets -->
+        <div>
+          <span class='subheading mb-3'>Stylesheets</span>
+          <ul class='list-inline list-icons'>
+            <li class="list-inline-item"><i class="devicon-css3-plain-wordmark colored"></i></li>
+            <li class="list-inline-item"><i class="devicon-sass-original colored"></i></li>
           </ul>
-        </div> -->
+        </div>
+        
+        <!-- Databases -->
+        <div>
+          <span class='subheading mb-3'>Databases</span>
+          <ul class='list-inline list-icons'>
+            <li class="list-inline-item"><i class="devicon-postgresql-plain-wordmark colored"></i></li>
+            <li class="list-inline-item"><i class="devicon-mongodb-plain-wordmark colored"></i></li>
+          </ul>
+        </div>
+        
+        <!-- Version Control -->
+        <div>
+          <span class='subheading mb-3'>Version Control</span>
+          <ul class='list-inline list-icons'>
+            <li class="list-inline-item"><i class="devicon-git-plain-wordmark colored"></i></li>
+            <li class="list-inline-item"><i class="devicon-github-plain-wordmark colored"></i></li>
+            <li class='list-inline-item'><i class="devicon-bitbucket-plain-wordmark colored"></i></li>
+          </ul>
+        </div>
       </section>
 
+      <!-- Interests -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
           <h2 class="mb-5">Interests</h2>
@@ -762,38 +516,10 @@ as this will be implied by the places you apply to! -->
         </div>
       </section>
 
+      <!-- Publications -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="publications">
         <div class="my-auto">
           <h2 class="mb-5">Publications</h2>
-          <!-- <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul> -->
           <p>
             Kang Wang, Brian P.V. Hunt, Cui Liang, Daniel Pauly,
             Evgeny A. Pakhomov, Handling editor: Rubao Ji
@@ -811,6 +537,7 @@ as this will be implied by the places you apply to! -->
         </div>
       </section>
 
+      <!-- References -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="download">
         <div class="my-auto">
           <h2 class="mb-5">References</h2>
@@ -819,7 +546,6 @@ as this will be implied by the places you apply to! -->
           </p>
         </div>
       </section>
-
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -831,7 +557,5 @@ as this will be implied by the places you apply to! -->
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
   </body>
-
 </html>
